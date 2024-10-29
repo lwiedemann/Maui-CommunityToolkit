@@ -58,6 +58,7 @@ partial class CameraManager
 			return;
 		}
 
+		cameraControl?.EnableTorch(flashMode is CameraFlashMode.Torch);
 		imageCapture.FlashMode = flashMode.ToPlatform();
 	}
 

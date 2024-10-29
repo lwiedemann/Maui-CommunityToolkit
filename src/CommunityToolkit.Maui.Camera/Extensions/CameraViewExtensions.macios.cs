@@ -20,6 +20,7 @@ static class CameraViewExtensions
 		CameraFlashMode.Off => AVCaptureFlashMode.Off,
 		CameraFlashMode.On => AVCaptureFlashMode.On,
 		CameraFlashMode.Auto => AVCaptureFlashMode.Auto,
+		CameraFlashMode.Torch => AVCaptureFlashMode.On,
 		_ => throw new NotSupportedException($"{flashMode} is not yet supported"),
 	};
 
