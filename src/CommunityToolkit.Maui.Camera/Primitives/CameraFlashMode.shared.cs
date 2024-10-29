@@ -18,5 +18,10 @@ public enum CameraFlashMode
 	/// <summary>
 	/// Flash will automatically be used based on the lighting conditions.
 	/// </summary>
-	Auto
+	Auto,
+	
+	/// <summary>
+	/// Flash will always be on.
+	/// </summary>
+	Torch
 }

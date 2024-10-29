@@ -46,6 +46,10 @@ partial class CameraManager
 	public partial void UpdateFlashMode(CameraFlashMode flashMode)
 	{
 		this.flashMode = flashMode.ToPlatform();
+		if (captureDevice is not null)
+		{
+			captureDevice.TorchMode = flashMode is CameraFlashMode.Torch ? AVCaptureTorchMode.On : AVCaptureTorchMode.Off;
+		}
 	}
 
 	public partial void UpdateZoom(float zoomLevel)
